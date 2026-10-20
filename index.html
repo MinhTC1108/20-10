@@ -1,49 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Defines the character encoding as UTF-8 (supports most characters and symbols) -->
-    <meta charset="UTF-8">
-    <!-- Ensures the layout is responsive on mobile devices by setting the viewport width to the device width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Links the external CSS file that contains all the styles for this page -->
-    <link rel="stylesheet" href="style.css">
-    <!-- The text that will appear in the browser tab -->
-    <title> 20/10 </title>
-</head>
-<body>
-    <!-- Main title of the page -->
-    <h1>
-        Nhân ngày 20/10
-    </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Love Letter</title>
 
-    <!-- Container used to limit the width of the envelope area -->
-    <div class="container">
-        <!-- Main wrapper for the envelope component -->
-        <div class="envelope-wrapper">
-            <!-- Internal wrapper that will contain the letter and the envelope flap -->
-            <div class="wrapper">
-                <!-- Represents the letter itself (the paper inside the envelope) -->
-                <div class="letter">
-                    <!-- Content area of the letter (text and title) -->
-                    <div class="content">
-                        <!-- Bold text acting as the letter's title -->
-                        <strong>20/10 🎉🎉</strong>
-                        <!-- Main paragraph of the letter; you can put any message here -->
-                        <p> Chúc mọi người có 1 ngày 20/10 thật vui vẻ,và tràn đầy năng lượng tích cực, chúc mọi người ngày càng xinh đẹp hơn, ăn mau chóng lớn nha ^^</p>
-                    </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <div class="scene">
+      <div class="shadow"></div>
+
+      <div class="envelope" id="envelope">
+        <!-- Back -->
+        <div class="back"></div>
+
+        <!-- Letter -->
+        <div class="letter-wrapper">
+          <div class="letter">
+            <div class="paper">
+              <!-- Left -->
+              <section class="panel left">
+                <div class="inside">
+                  <h2>To My Love</h2>
+
+                  <p>
+                    Every smile of yours brightens my life. Thank you for being
+                    the best part of every day.
+                  </p>
                 </div>
-            </div>
+              </section>
 
-            <!-- Decorative "sticker" that visually seals the envelope and is clickable -->
-            <div class="sticker"></div>
-            <!-- Right triangular flap of the envelope body -->
-            <div class="right-flap"></div>
-            <!-- Left triangular flap of the envelope body -->
-            <div class="left-flap"></div>
+              <!-- Center -->
+
+              <section class="panel center">
+                <div class="cover">
+                  <span class="mini"> A </span>
+
+                  <h1>Love</h1>
+
+                  <h2>Letter</h2>
+
+                  <div class="heart">❤</div>
+                </div>
+              </section>
+
+              <!-- Right -->
+
+              <section class="panel right">
+                <div class="inside">
+                  <h2>Forever</h2>
+
+                  <p>
+                    Thank you for every laugh, every hug, every memory and every
+                    dream.
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
+
+        <!-- Pocket -->
+
+        <div class="pocket">
+          <div class="left-fold"></div>
+
+          <div class="right-fold"></div>
+        </div>
+
+        <!-- Flap -->
+
+        <div class="flap">
+          <div class="seal">❤</div>
+        </div>
+      </div>
     </div>
 
-    <!-- Links the JavaScript file that handles the envelope open/close interaction -->
+    <div class="hint" id="hint">Tap the Envelope</div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
