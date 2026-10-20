@@ -48,6 +48,7 @@ h1 {
     box-shadow: 0 0 40px var(--shadow);
     border-radius: 15px;
     cursor: pointer;
+    overflow: visible;
 }
 
 /* Wrapper inside the envelope used to position the letter and flap shape */
@@ -55,6 +56,7 @@ h1 {
     position: relative;
     width: 400px;
     height: 300px;
+    overflow: visible;
 }
 
 /* Pseudo-element that creates the top triangular flap with borders */
@@ -112,7 +114,7 @@ h1 {
     box-shadow: 0 0 5px var(--shadow);
     padding: 20px;
     border-radius: 10px;
-    transition: transform .5s ease-in-out;
+    transition: transform .4s ease-in-out;
     z-index: 1;
 }
 
@@ -199,14 +201,14 @@ h1 {
 
 /* When .show-letter is added, move the letter upwards */
 .letter.show-letter {
-    transform: translateY(-290px);
-    transition: transform .5s ease-in-out;
+    transform: translateY(-220px);
+    transition: transform .4s ease-in-out;
 }
 
-/* When .closing-letter is added, also move the letter */
+/* When closing animation runs */
 .letter.closing-letter {
-    transform: translateY(-290px);
-    transition: transform .5s ease-in-out;
+    transform: translateY(0);
+    transition: transform .4s ease-in-out;
 }
 
 /* When the letter has class .open, bring it above other elements */
@@ -214,7 +216,7 @@ h1 {
     z-index: 10000;
 }
 
-/* Disable clicking on the flap once envelope is open */
+/* Prevent interaction with the flap after opening */
 .envelope-wrapper.deactivate-wrapper .wrapper::before {
     pointer-events: none;
 }
