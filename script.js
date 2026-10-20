@@ -15,8 +15,8 @@ if (!wrapper || !letter) {
                 setTimeout(() => {
                     letter.classList.remove("show-letter");
                     letter.classList.add("open");
-                }, 500);
-            }, 1000);
+                }, 400);
+            }, 700);
         }
     };
 
@@ -30,7 +30,7 @@ if (!wrapper || !letter) {
             setTimeout(() => {
                 letter.classList.remove("closing-letter");
                 letter.classList.remove("open");
-            }, 500);
+            }, 400);
         }
     };
 
